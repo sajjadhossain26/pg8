@@ -1,0 +1,6 @@
+import { courses } from '@/data/courses';
+import { auth } from '@/lib/auth';
+import { headers } from 'next/headers';
+import { redirect, notFound } from 'next/navigation';
+import Image from 'next/image';
+export default async function CourseDetails({params}){const session=await auth.api.getSession({headers: await headers()}); if(!session) redirect(`/login?redirect=/courses/${params.id}`); const course=courses.find(c=>String(c.id)===String(params.id)); if(!course) notFound(); return <section className="max-w-5xl mx-auto px-4 py-12"><Image src={course.image} alt={course.title} width={1200} height={500} className="rounded-3xl h-80 w-full object-cover"/><div className="mt-8"><div className="badge badge-primary">{course.category}</div><h1 className="text-4xl font-black mt-4">{course.title}</h1><p className="text-gray-600 mt-2">Instructor: {course.instructor} • {course.duration} • Rating {course.rating}</p><p className="mt-6 text-lg">{course.description}</p><h2 className="text-2xl font-bold mt-10 mb-4">Course Curriculum</h2><ul className="steps steps-vertical w-full">{course.curriculum.map(item=><li key={item} className="step step-primary">{item}</li>)}</ul><button className="btn btn-primary mt-8">Enroll Now</button></div></section>}

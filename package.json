@@ -1,0 +1,30 @@
+{
+  "name": "skillsphere",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@better-auth/cli": "^1.4.21",
+    "@libsql/client": "^0.17.3",
+    "@libsql/kysely-libsql": "^0.4.1",
+    "better-auth": "latest",
+    "framer-motion": "latest",
+    "lucide-react": "latest",
+    "next": "^16.2.4",
+    "react": "latest",
+    "react-dom": "latest",
+    "sonner": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "daisyui": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "tailwindcss": "latest"
+  }
+}
