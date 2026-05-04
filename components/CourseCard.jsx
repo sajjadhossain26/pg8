@@ -26,7 +26,7 @@ export default function CourseCard({ course }) {
         </div>
         <div className="card-actions justify-end">
           <Link className="btn btn-primary" href={`/courses/${course.id}`}>
-            View Details
+            View Detail
           </Link>
         </div>
       </div>
