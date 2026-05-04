@@ -12,7 +12,7 @@ export default function Footer() {
         <a>LinkedIn</a>
         <a>Instagram</a>
         <Link href="/terms">Terms & Conditions</Link>
-        <Link href="/privacy">Privacy Policy </Link>
+        <Link href="/privacy">Privacy & Policy </Link>
       </nav>
     </footer>
   );
