@@ -15,7 +15,7 @@ export default function Home() {
               Learn from Industry Expert
             </p>
             <h1 className="text-5xl md:text-7xl font-black leading-tight">
-              Upgrade Your Skills Today 🚀
+              Upgrade Your Skills Today
             </h1>
             <p className="py-6 text-lg opacity-90">
               Explore skill-based programs in Web Development, Design,
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </section>
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-black mb-8">🔥 Popular Courses</h2>
+        <h2 className="text-4xl font-black mb-8"> Popular Courses</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {popular.map((c) => (
             <CourseCard key={c.id} course={c} />
@@ -37,7 +37,7 @@ export default function Home() {
       </section>
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-black mb-8">📌 Learning Tips</h2>
+          <h2 className="text-4xl font-black mb-8"> Learning Tips</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               ["Set clear goals", Target],
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
       </section>
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-black mb-8">🏆 Top Instructors</h2>
+        <h2 className="text-4xl font-black mb-8"> Top Instructors</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {instructors.map((i) => (
             <div
@@ -78,7 +78,7 @@ export default function Home() {
         </div>
       </section>
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-black mb-8">👉 Trending Courses</h2>
+        <h2 className="text-4xl font-black mb-8">Trending Courses</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {trending.map((c) => (
             <CourseCard key={c.id} course={c} />
