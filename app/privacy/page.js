@@ -4,7 +4,7 @@ export default function Privacy() {
       <h1 className="text-4xl font-black">Privacy Policy</h1>
       <p className="mt-4">
         We protect user data and use environment variables for sensitive
-        configuration.
+        configuration
       </p>
     </section>
   );
