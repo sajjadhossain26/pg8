@@ -12,7 +12,7 @@ export default function CoursesPage() {
     [search],
   );
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12">
+    <section className="max-w-7xl mx-auto px-4 py-11">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
         <h1 className="text-4xl font-black">All Courses</h1>
         <input
